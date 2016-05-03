@@ -6,6 +6,7 @@ class YouTube
 
   def initialize(search_term)
     Yt.configure do |config|
+      config.log_level = :debug
       config.api_key = ENV['DEVELOPER_KEY']
     end
     @search_term = search_term

@@ -20,6 +20,17 @@ $(document).ready(function() {
     
     // your code will go here
 
+    var input = $("#text-field").val();
+    $.ajax({
+      //use the data key below to accomplish the immediate below
+      //"url":  "/widget?search_keyword=" + input,
+      "url":  "/widget",
+      "data": {search_keyword: input},
+      "method": "GET"
+    }).done(function(video){
+        $("#search-results").html(video);
+    });
+
   }
 
 });
