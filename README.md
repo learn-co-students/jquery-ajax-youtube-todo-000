@@ -86,7 +86,7 @@ var nameOfUser = $(".user-name").val();
 
 ### Make an AJAX Call
 
-* Make an an AJAX GET call to the route `/widget` to retrieve a YouTube widget based on the user's input. Remember, if the user types "giraffes", the params you pass it should look like this:
+* Make an AJAX GET call to the route `/widget` to retrieve a YouTube widget based on the user's input. Remember, if the user types "giraffes", the params you pass it should look like this:
 
 ```ruby
 {search_keyword: "giraffes"}
